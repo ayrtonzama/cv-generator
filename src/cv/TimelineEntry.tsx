@@ -1,16 +1,14 @@
 import { View, Text } from '@react-pdf/renderer';
 import { styles } from './styles';
-import { BuildingIcon } from './icons/Icon';
 
 type Props = {
   startDate: string;
   endDate?: string;
   location?: string;
   children: React.ReactNode;
-  showIcon?: boolean;
 };
 
-export const TimelineEntry = ({ startDate, endDate, location, children, showIcon = true }: Props) => {
+export const TimelineEntry = ({ startDate, endDate, location, children }: Props) => {
   const dates = endDate ? `${startDate} - ${endDate}` : startDate ? `${startDate} - Present` : '';
   return (
     <View style={styles.entry} wrap={false}>
