@@ -10,7 +10,8 @@ export const colors = {
   iconBg: '#f3f4f6',
   iconStroke: '#6b7280',
 };
-
+const marginBottom = 6
+const marginTop = 6
 export const styles = StyleSheet.create({
   page: {
     paddingTop: 28,
@@ -27,27 +28,27 @@ export const styles = StyleSheet.create({
     fontFamily: 'Helvetica-Bold',
     color: colors.text,
     letterSpacing: 0.4,
-    marginBottom: 4,
+    marginBottom: marginBottom,
   },
   headline: {
     fontSize: 9.5,
     color: colors.accent,
     fontFamily: 'Helvetica-Bold',
-    marginTop: 4,
-    marginBottom: 4,
+    marginTop: marginTop,
+    marginBottom: marginBottom,
   },
   contactRow: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     fontSize: 8,
     color: colors.text,
-    marginBottom: 4,
+    marginBottom: marginBottom,
   },
   contactItem: {
     flexDirection: 'row',
     alignItems: 'center',
     marginRight: 12,
-    marginBottom: 4,
+    marginBottom: marginBottom,
   },
   contactText: { marginLeft: 3 },
 
@@ -57,19 +58,19 @@ export const styles = StyleSheet.create({
     fontFamily: 'Helvetica-Bold',
     color: colors.textMuted,
     letterSpacing: 1,
-    marginTop: 4,
-    marginBottom: 4,
+    marginTop: marginTop,
+    marginBottom: marginBottom,
   },
   paragraph: {
     fontSize: 9,
     color: colors.text,
-    marginBottom: 4,
+    marginBottom: marginBottom,
   },
 
   // Timeline entry
   entry: {
     flexDirection: 'row',
-    marginBottom: 4,
+    marginBottom: marginBottom,
   },
   entryLeft: {
     width: 80,
@@ -87,7 +88,7 @@ export const styles = StyleSheet.create({
     height: 6,
     borderRadius: 3,
     backgroundColor: colors.dot,
-    marginTop: 4,
+    marginTop: marginTop,
   },
   entryLine: {
     width: 1,
@@ -124,7 +125,7 @@ export const styles = StyleSheet.create({
   colHeading: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 4,
+    marginBottom: marginBottom,
   },
   colHeadingText: {
     fontFamily: 'Helvetica-Bold',
